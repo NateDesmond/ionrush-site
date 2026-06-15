@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Support — Ion Rush</title>
+  <meta name="description" content="Support and contact for Ion Rush. Get in touch, read the FAQ, and learn how to play, whether it's free, how leaderboards work, and how to replay the intro." />
+  <meta name="theme-color" content="#16c2b3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="../"><span class="site-nav__dot" aria-hidden="true"></span> Ion Rush</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="site-nav__links" id="nav-links">
+        <a href="../">Home</a>
+        <a href="../support/">Support</a>
+        <a href="../privacy/">Privacy</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="doc-hero">
+    <div class="container">
+      <h1>Support</h1>
+      <p>We're happy to help — Ion Rush is made by one person who reads every message.</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <div class="contact-card">
+        <p>Have a question, a bug to report, or just want to say hi? Email us and we'll get back to you.</p>
+        <a class="btn btn--primary" href="mailto:nate@natedesmond.com">✉️ nate@natedesmond.com</a>
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="faq__item">
+        <h3>How do I play?</h3>
+        <p>Ion Rush is a one-thumb arcade catcher. You guide Remi across the desert, catching falling <strong>water and ion drinks</strong> to stay hydrated while dodging <strong>soda and coffee</strong>. Reach an oasis and plant the last seed to bring the green back. It's gentle and easy to pick up — just keep catching the water.</p>
+      </div>
+      <div class="faq__item">
+        <h3>Is it free? Are there ads?</h3>
+        <p>Yes, Ion Rush is completely free. There are <strong>no ads</strong>, <strong>no in-app purchases</strong>, and no accounts to create. The whole game is just there to enjoy.</p>
+      </div>
+      <div class="faq__item">
+        <h3>How do leaderboards work?</h3>
+        <p>Leaderboards use Apple's <strong>Game Center</strong>. If you're signed in to Game Center, your scores — measured in miles, points and oases revived — are submitted automatically so you can compare your runs with other players. It's entirely optional; the game plays fine without it. See our <a href="../privacy/">Privacy Policy</a> for details on what Game Center does.</p>
+      </div>
+      <div class="faq__item">
+        <h3>How do I replay the intro?</h3>
+        <p>You can watch the opening story again from the in-game <strong>Settings</strong> menu — look for the option to replay the intro. It will play "The Last Seed" from the beginning.</p>
+      </div>
+      <div class="faq__item">
+        <h3>What are the shifting zones and power-ups?</h3>
+        <p>As you travel, the world shifts between zones like Crosswind, Inverted, Eclipse, Sandstorm, Flash Flood, Low Gravity and Mirror — each changing how things fall. Power-ups like the Canteen, Umbrella, Ion Surge, Cloudburst and Wild Seed help you push further.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="doc__back" style="max-width:46rem;margin:2.5rem auto 4rem;">
+        <a class="btn btn--ghost" href="../">← Back to home</a>
+        <a class="btn btn--secondary" href="../privacy/">Privacy Policy</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__links">
+        <a href="../">Home</a>
+        <a href="../privacy/">Privacy Policy</a>
+        <a href="mailto:nate@natedesmond.com">Contact</a>
+      </div>
+      <p>© 2026 Urban Algorithm LLC</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var links = document.getElementById('nav-links');
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          var open = links.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

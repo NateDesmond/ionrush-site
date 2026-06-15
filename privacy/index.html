@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Ion Rush</title>
+  <meta name="description" content="Ion Rush privacy policy. The game collects no personal information, has no ads, no trackers, and no accounts. Progress is stored locally on your device." />
+  <meta name="theme-color" content="#16c2b3" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="site-nav" aria-label="Primary">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="../"><span class="site-nav__dot" aria-hidden="true"></span> Ion Rush</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <div class="site-nav__links" id="nav-links">
+        <a href="../">Home</a>
+        <a href="../support/">Support</a>
+        <a href="../privacy/">Privacy</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="doc-hero">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <p>Ion Rush · Urban Algorithm LLC</p>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="doc">
+      <div class="doc__meta">
+        <strong>Last updated:</strong> June 16, 2026 &nbsp;·&nbsp; <strong>Developer:</strong> Urban Algorithm LLC
+      </div>
+
+      <p>This policy explains how the iOS game <strong>Ion Rush</strong> ("the game," "the app") handles your information. The short version: it doesn't collect any. Ion Rush is a small passion project made to be played, not monetized.</p>
+
+      <h2>The short version</h2>
+      <ul>
+        <li>Ion Rush is <strong>free</strong> and contains <strong>no ads</strong> and <strong>no in-app purchases</strong>.</li>
+        <li>We do <strong>not</strong> collect, store, or share any personal information.</li>
+        <li>There are <strong>no analytics SDKs, no third-party trackers, no advertising networks, and no user accounts</strong>.</li>
+        <li>Your game progress stays <strong>on your device</strong>.</li>
+      </ul>
+
+      <h2>Information we collect</h2>
+      <p>None. The developer (Urban Algorithm LLC) does not collect, store, or share any personal information about you. The game does not ask you to create an account, does not request your name, email, location, or contacts, and contains no advertising or analytics software of any kind.</p>
+
+      <h2>Data stored on your device</h2>
+      <p>Your game progress — such as your high score, the oases you've revived (your grove), your settings, and whether you've seen the intro — is saved <strong>locally on your device</strong> using the operating system's standard on-device storage. This information stays on your device and is <strong>not transmitted to the developer</strong> or to anyone else. Deleting the app removes this local data.</p>
+
+      <h2>Game Center</h2>
+      <p>Ion Rush integrates Apple's <strong>Game Center</strong> for optional leaderboards. If you choose to use Game Center, the game submits your score to the leaderboard so it can be ranked against other players. This feature is provided by Apple and is governed by <strong>Apple's Game Center and Apple's privacy policy</strong>, not by us. We do not receive or store the personal information associated with your Game Center account. You can read Apple's privacy policy at <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>.</p>
+
+      <h2>Children's privacy</h2>
+      <p>Ion Rush is suitable for all ages and does not knowingly collect any data from children. Because the app collects no personal information from anyone, there is nothing for us to gather from children either.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If this policy ever changes, we'll update the "Last updated" date above and post the revised version on this page.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy? Reach out any time at <a href="mailto:nate@natedesmond.com">nate@natedesmond.com</a>.</p>
+
+      <div class="doc__back">
+        <a class="btn btn--ghost" href="../">← Back to home</a>
+        <a class="btn btn--secondary" href="../support/">Support</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__links">
+        <a href="../">Home</a>
+        <a href="../support/">Support</a>
+        <a href="mailto:nate@natedesmond.com">Contact</a>
+      </div>
+      <p>© 2026 Urban Algorithm LLC</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var links = document.getElementById('nav-links');
+      if (toggle && links) {
+        toggle.addEventListener('click', function () {
+          var open = links.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
