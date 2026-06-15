@@ -115,7 +115,7 @@ img { max-width: 100%; height: auto; display: block; }
     radial-gradient(120% 90% at 80% -10%, rgba(255, 246, 217, 0.95) 0%, rgba(247, 201, 182, 0) 55%),
     linear-gradient(170deg, #fff6e4 0%, var(--peach) 38%, var(--coral) 78%, var(--coral-deep) 100%);
   color: #5a2a18;
-  padding: 3.5rem 0 4rem;
+  padding: 3.5rem 0 5.5rem;
 }
 .hero::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 70px;
@@ -123,6 +123,7 @@ img { max-width: 100%; height: auto; display: block; }
   clip-path: ellipse(75% 100% at 50% 100%);
 }
 .hero__grid {
+  position: relative; z-index: 1;
   display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2.5rem; align-items: center;
 }
 .hero__eyebrow {
