@@ -87,6 +87,11 @@ img { max-width: 100%; height: auto; display: block; }
   background: radial-gradient(circle at 35% 30%, #aef6ee, var(--ion) 70%);
   box-shadow: 0 0 0 3px rgba(22, 194, 179, 0.18);
 }
+.site-nav__logo {
+  width: 30px; height: 30px; border-radius: 50%; object-fit: cover; object-position: center 18%;
+  background: linear-gradient(160deg, #fff6e4, var(--peach));
+  box-shadow: 0 0 0 2px rgba(22, 194, 179, 0.22), var(--shadow-sm);
+}
 .site-nav__links { display: flex; gap: 1.4rem; align-items: center; }
 .site-nav__links a { color: var(--ink-soft); font-weight: 500; font-size: .98rem; }
 .site-nav__links a:hover { color: var(--ion-deep); text-decoration: none; }
@@ -149,7 +154,7 @@ img { max-width: 100%; height: auto; display: block; }
   animation: bob 5s ease-in-out infinite;
 }
 .hero__art img.hero__palm {
-  position: absolute; left: -6%; bottom: -4%; width: 120px; opacity: .95;
+  position: absolute; right: 2%; bottom: -4%; left: auto; width: 120px; opacity: .95;
   filter: drop-shadow(0 14px 16px rgba(90, 40, 20, 0.22));
 }
 @keyframes bob {
@@ -209,6 +214,51 @@ section { padding: 3.5rem 0; }
 .story__card b { color: var(--ink); }
 .story__card .lead { font-family: var(--serif); font-style: italic; font-size: 1.25rem; color: var(--ink); }
 
+/* Story as a parchment letter */
+.story__letter {
+  position: relative;
+  max-width: 46rem;
+  border: 1px solid #d8c39a;
+  border-radius: 6px;
+  padding: 2.6rem 2.8rem 2.4rem;
+  color: #4f3b22;
+  background-color: #f5e8c8;
+  background-image:
+    radial-gradient(120% 90% at 12% 8%, rgba(255, 250, 235, 0.85), transparent 55%),
+    radial-gradient(140% 120% at 88% 96%, rgba(150, 116, 64, 0.18), transparent 50%),
+    radial-gradient(60% 60% at 50% 50%, rgba(214, 184, 130, 0.0), rgba(176, 140, 84, 0.16) 100%),
+    linear-gradient(160deg, #f8edd0 0%, #f0dfb4 60%, #e8d3a0 100%);
+  box-shadow:
+    0 18px 44px rgba(90, 64, 24, 0.22),
+    inset 0 0 60px rgba(150, 110, 56, 0.14),
+    inset 0 0 0 1px rgba(255, 252, 240, 0.4);
+}
+.story__letter::before {
+  content: "";
+  position: absolute; inset: 9px;
+  border: 1px dashed rgba(120, 92, 48, 0.35);
+  border-radius: 4px;
+  pointer-events: none;
+}
+.story__letter h2 {
+  font-family: var(--serif); font-style: italic;
+  color: #5e451f; text-align: center; margin-bottom: 1.4rem;
+}
+.story__letter p {
+  font-family: var(--serif);
+  color: #503b21; font-size: 1.1rem; line-height: 1.7;
+}
+.story__letter b { color: #3f2e16; }
+.story__greeting { font-style: italic; font-size: 1.2rem; }
+.story__sign { margin-top: 1.6rem; font-style: italic; }
+.story__name {
+  font-family: var(--serif); font-style: italic; font-weight: 600;
+  font-size: 1.5rem; color: #5e451f;
+}
+@media (max-width: 540px) {
+  .story__letter { padding: 1.9rem 1.5rem; }
+}
+
 /* Features grid */
 .features {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem;
@@ -249,6 +299,22 @@ section { padding: 3.5rem 0; }
   text-shadow: 0 1px 6px rgba(0,0,0,.35);
 }
 .phone__sub { font-size: .82rem; color: rgba(255,255,255,.9); margin-top: .25rem; }
+
+/* Phone frames showing real screenshots */
+.phone--shot { margin: 0; background: linear-gradient(160deg, #0d2b2a, #06403d); }
+.phone--shot .phone__screen {
+  padding: 0; background: #06403d; justify-content: flex-start;
+}
+.phone--shot .phone__screen img.phone__shot {
+  width: 100%; height: 100%; margin: 0; object-fit: cover; object-position: top center;
+  border-radius: 26px; filter: none;
+}
+.phone__label {
+  display: flex; flex-direction: column; align-items: center;
+  margin-top: .9rem; color: var(--ink); text-align: center;
+}
+.phone__label .phone__cap { color: var(--ink); text-shadow: none; }
+.phone__label .phone__sub { color: var(--ink-soft); }
 
 /* Zones chips */
 .zones { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; margin-top: 1.6rem; }
@@ -323,6 +389,8 @@ section { padding: 3.5rem 0; }
   .hero__desc { margin-left: auto; margin-right: auto; }
   .hero__cta { justify-content: center; }
   .hero__art { order: -1; }
+  .hero__art img.hero__remi { width: min(280px, 64%); }
+  .hero__art img.hero__palm { width: 92px; right: 8%; bottom: -2%; }
   .features { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 540px) {

@@ -22,7 +22,7 @@
   <!-- ===================== NAV ===================== -->
   <nav class="site-nav" aria-label="Primary">
     <div class="site-nav__inner">
-      <a class="site-nav__brand" href="#top"><span class="site-nav__dot" aria-hidden="true"></span> Bloomfall</a>
+      <a class="site-nav__brand" href="#top"><img class="site-nav__logo" src="assets/img/remi_excited.png" alt="Remi" onerror="this.style.display='none'" /> Bloomfall</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
       <div class="site-nav__links" id="nav-links">
         <a href="#story">Story</a>
@@ -68,11 +68,14 @@
     <!-- ===================== STORY ===================== -->
     <section id="story" class="story">
       <div class="container">
-        <div class="story__card">
-          <h2>The Last Seeds</h2>
-          <p class="lead">Once, the world was green. Now the Dry has taken almost all of it.</p>
-          <p>You are <b>Remi</b>, a tiny hooded wanderer crossing <b>the Dry</b> (a cracked, sun-bleached world), carrying the last seeds, the last seeds of the green world. The only way to keep going is to stay hydrated: catch the falling <b>water</b>, <b>rain</b> and rare <b>golden dew</b>, and steer clear of the <b>brine</b> and <b>brackish water</b> that leave you parched.</p>
-          <p>Reach the oases scattered across the sands and <b>plant a seed</b>. Each one you revive turns a patch of the Dry back to green. The journey never truly ends; it just keeps shifting, mile after mile.</p>
+        <div class="story__card story__letter">
+          <h2>A Letter from the Last Garden</h2>
+          <p class="story__greeting">Dear traveler,</p>
+          <p>Once, the whole world was green. I remember rivers, and rain that came when it was asked, and gardens that went on past the edge of seeing.</p>
+          <p>Now the <b>Dry</b> has taken almost all of it. The rivers are dust. The gardens are bones. But in this little pouch I carry the last seeds, the very last seeds of the green world.</p>
+          <p>So I walk. My name is <b>Remi</b>, and I am crossing the desert to find the old oases and plant them, one by one, until the green comes creeping back. I catch the falling water to keep going. I plant where I can. I do not stop.</p>
+          <p>If you find these pages, then perhaps you will carry the seeds a little farther too.</p>
+          <p class="story__sign">Yours across the sand,<br /><span class="story__name">Remi</span></p>
         </div>
       </div>
     </section>
@@ -98,7 +101,7 @@
           <div class="feature">
             <div class="feature__icon" aria-hidden="true">💧</div>
             <h3>Power-ups</h3>
-            <p>Grab the Canteen, Umbrella, Ion Surge, Cloudburst and Wild Seed to push deeper into the Dry.</p>
+            <p>Grab the Canteen, Umbrella, Sun Surge, Cloudburst and Magnet to push deeper into the Dry. Catch clean water, rain and golden dew; dodge brine and brackish water.</p>
           </div>
           <div class="feature">
             <div class="feature__icon" aria-hidden="true">🏆</div>
@@ -134,30 +137,36 @@
       <div class="container">
         <div class="section__head">
           <h2>A warm little world</h2>
-          <p>Soft desert sunsets, ion-blue skies and oases coming back to life.</p>
+          <p>Soft desert sunsets, wide open skies and oases coming back to life.</p>
         </div>
         <div class="shots">
-          <div class="phone phone--sunset">
+          <figure class="phone phone--shot">
             <div class="phone__screen">
-              <img src="assets/img/share_hero.png" alt="Remi raising the last seeds" onerror="this.style.display='none'" />
+              <img class="phone__shot" src="assets/img/shot_home.png" alt="Bloomfall home screen with Remi ready to set out across the Dry" onerror="this.style.display='none'" />
+            </div>
+            <figcaption class="phone__label">
               <span class="phone__cap">Carry the seeds</span>
               <span class="phone__sub">Across the Dry</span>
-            </div>
-          </div>
-          <div class="phone phone--ion">
+            </figcaption>
+          </figure>
+          <figure class="phone phone--shot">
             <div class="phone__screen">
-              <img src="assets/img/share_celebrate.png" alt="Remi celebrating a successful run" onerror="this.style.display='none'" />
+              <img class="phone__shot" src="assets/img/shot_gameplay.png" alt="Bloomfall gameplay, catching falling water as Remi runs" onerror="this.style.display='none'" />
+            </div>
+            <figcaption class="phone__label">
               <span class="phone__cap">Catch the water</span>
               <span class="phone__sub">Stay hydrated</span>
-            </div>
-          </div>
-          <div class="phone phone--oasis">
+            </figcaption>
+          </figure>
+          <figure class="phone phone--shot">
             <div class="phone__screen">
-              <img src="assets/img/remi_plant.png" alt="Remi planting a seed at an oasis" onerror="this.style.display='none'" />
+              <img class="phone__shot" src="assets/img/shot_oasis.png" alt="Bloomfall oasis reviving back to green after a seed is planted" onerror="this.style.display='none'" />
+            </div>
+            <figcaption class="phone__label">
               <span class="phone__cap">Revive the oasis</span>
               <span class="phone__sub">Bring back the green</span>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
