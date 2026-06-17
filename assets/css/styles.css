@@ -301,14 +301,18 @@ section { padding: 3.5rem 0; }
 .phone__sub { font-size: .82rem; color: rgba(255,255,255,.9); margin-top: .25rem; }
 
 /* Phone frames showing real screenshots */
+/* The figure is just a column container; the dark bezel lives ONLY on the
+   screen so it hugs the screenshot on all four sides with no dead space. */
 .phone--shot {
   margin: 0; width: 230px; aspect-ratio: auto; height: auto;
-  background: linear-gradient(160deg, #0d2b2a, #06403d);
-  display: flex; flex-direction: column;
+  padding: 0; background: none; box-shadow: none;
+  display: flex; flex-direction: column; align-items: center;
 }
 .phone--shot .phone__screen {
   width: 100%; height: auto; aspect-ratio: 1290 / 2796;
-  padding: 0; background: #06403d; justify-content: flex-start; display: block;
+  padding: 8px; background: linear-gradient(160deg, #0d2b2a, #06403d);
+  border-radius: 34px; box-shadow: var(--shadow);
+  justify-content: flex-start; display: block; overflow: hidden;
 }
 .phone--shot .phone__screen img.phone__shot {
   display: block; width: 100%; height: 100%; margin: 0;
