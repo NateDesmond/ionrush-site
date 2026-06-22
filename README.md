@@ -95,7 +95,7 @@ resolves, enable **Enforce HTTPS** as in step 5 above.
 
 ## TODO
 
-- [ ] **Add the App Store URL.** The "Coming soon to the App Store" buttons on
+- [x] **App Store URL added (live).** The "Coming soon to the App Store" buttons on
       the landing page are placeholders. Search `index.html` for
       `<!-- TODO: App Store URL -->` and swap the `href` (and styling) once the
       listing is live.
