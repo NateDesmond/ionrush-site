@@ -148,6 +148,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: .8rem; }
 
 .hero__art { position: relative; text-align: center; }
+.hero__phone { width: min(300px, 82%); margin: 0 auto; }
 .hero__art img.hero__remi {
   width: min(330px, 78%); margin: 0 auto;
   filter: drop-shadow(0 22px 28px rgba(90, 40, 20, 0.28));
@@ -187,7 +188,13 @@ img { max-width: 100%; height: auto; display: block; }
   cursor: default; box-shadow: var(--shadow-sm);
 }
 .btn--disabled:hover { transform: none; }
-.btn__apple { font-size: 1.3rem; line-height: 1; }
+.btn--appstore {
+  background: linear-gradient(180deg, #14302e 0%, #06403d 100%); color: var(--cream);
+  box-shadow: 0 10px 24px rgba(6, 64, 61, 0.35);
+}
+.btn--appstore:hover { color: var(--cream); }
+.btn__apple { font-size: 1.3rem; line-height: 1; display: inline-flex; }
+.btn__apple svg { width: 1.45rem; height: 1.45rem; fill: currentColor; display: block; }
 .btn__sub { display: block; font-size: .68rem; font-weight: 500; opacity: .8; letter-spacing: .04em; }
 .btn__main { display: block; font-size: 1.05rem; }
 
