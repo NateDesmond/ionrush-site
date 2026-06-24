@@ -148,7 +148,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: .8rem; }
 
 .hero__art { position: relative; text-align: center; }
-.hero__phone { width: min(300px, 82%); margin: 0 auto; }
+.hero__art .hero__phone { width: min(300px, 82%); margin: 0 auto; }
 .hero__art img.hero__remi {
   width: min(330px, 78%); margin: 0 auto;
   filter: drop-shadow(0 22px 28px rgba(90, 40, 20, 0.28));
@@ -195,8 +195,8 @@ img { max-width: 100%; height: auto; display: block; }
 .btn--appstore:hover { color: var(--cream); }
 .btn__apple { font-size: 1.3rem; line-height: 1; display: inline-flex; }
 .btn__apple svg { width: 1.45rem; height: 1.45rem; fill: currentColor; display: block; }
-.btn__sub { display: block; font-size: .68rem; font-weight: 500; opacity: .8; letter-spacing: .04em; }
-.btn__main { display: block; font-size: 1.05rem; }
+.btn__sub { display: block; font-size: .68rem; font-weight: 500; opacity: .8; letter-spacing: .02em; text-align: center; }
+.btn__main { display: block; font-size: 1.05rem; letter-spacing: .01em; text-align: center; }
 
 /* ===================== SECTIONS ===================== */
 section { padding: 3.5rem 0; }
@@ -326,6 +326,11 @@ section { padding: 3.5rem 0; }
   object-fit: cover; object-position: center;
   border-radius: 26px; filter: none;
 }
+/* Hero phone: let the image drive its own height so the FULL screenshot shows
+   with the bezel hugging all four sides (cover + fixed aspect-ratio could clip
+   the bottom). */
+.hero__phone .phone__screen { aspect-ratio: auto; height: auto; }
+.hero__phone .phone__screen img.phone__shot { height: auto; object-fit: contain; }
 .phone__label {
   display: flex; flex-direction: column; align-items: center;
   margin-top: .9rem; color: var(--ink); text-align: center;
@@ -407,7 +412,7 @@ section { padding: 3.5rem 0; }
   .hero__cta { justify-content: center; }
   .hero__art { order: -1; }
   .hero__art img.hero__remi { width: min(280px, 64%); }
-  .hero__art img.hero__palm { width: 92px; right: 8%; bottom: -2%; }
+  .hero__art img.hero__palm { display: none; }
   .features { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 540px) {
